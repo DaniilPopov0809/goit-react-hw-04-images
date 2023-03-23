@@ -12,8 +12,8 @@ export default function ImageGallery({ galery }) {
     const searchImg = galery.filter(
       elem => elem.webformatURL === event.target.src
     );
-    setModalImg(searchImg);
     setIsOpenModal(true);
+    setModalImg(searchImg);
   };
 
   const onCloseModal = state => {
