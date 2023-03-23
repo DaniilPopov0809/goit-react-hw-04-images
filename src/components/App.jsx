@@ -54,6 +54,9 @@ export function App() {
   }, [searchValue, page]);
 
   const formSumbit = search => {
+    if(search === searchValue) {
+      return;
+    }
     setGalery([]);
     setPage(1);
     setSearchValue(search);
